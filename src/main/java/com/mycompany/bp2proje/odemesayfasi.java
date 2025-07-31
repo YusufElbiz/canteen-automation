@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -167,7 +167,7 @@ public class odemesayfasi extends javax.swing.JFrame {
     PreparedStatement pstmtInsert = null;
 
     try {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
 
         // Ödeme yöntemi kontrolü
         String odemeYontemi = "";

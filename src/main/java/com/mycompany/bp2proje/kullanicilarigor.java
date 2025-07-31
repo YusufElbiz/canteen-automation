@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -102,7 +102,7 @@ kullaniciListesi.setBackground(new Color(255, 153, 0)); // Arka plan rengini aç
     ResultSet rs = null;
 
     try {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
         String query = "SELECT * FROM kayitolma WHERE kullaniciadi = ?";
         pstmt = conn.prepareStatement(query);
         pstmt.setString(1, selectedKullanici); // Burada doğru değişkeni kullanıyoruz
@@ -217,7 +217,7 @@ Connection conn = null;
         ResultSet rs = null;
 
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
             String query = "SELECT kullaniciadi FROM kayitolma";
             pstmt = conn.prepareStatement(query);
             rs = pstmt.executeQuery();
@@ -239,3 +239,4 @@ Connection conn = null;
     }
 
 }
+

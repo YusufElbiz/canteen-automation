@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -151,7 +151,7 @@ private String kullaniciTuru;
     model.setRowCount(0); // Tabloyu temizle
 
     try {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
         String query = "SELECT urunadi, urunmiktari, odemeyontemi, toplamfiyat FROM fatura";
         pstmt = conn.prepareStatement(query);
         rs = pstmt.executeQuery();
@@ -201,7 +201,7 @@ private String kullaniciTuru;
     double toplamKazanc = 0;
 
     try {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
         String query = "SELECT SUM(toplamfiyat) AS toplamKazanc FROM fatura";
         pstmt = conn.prepareStatement(query);
         rs = pstmt.executeQuery();
@@ -269,3 +269,4 @@ private String kullaniciTuru;
     private javax.swing.JButton toplamkazancigosterbutonu;
     // End of variables declaration//GEN-END:variables
 }
+

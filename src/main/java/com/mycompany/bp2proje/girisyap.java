@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -203,7 +203,7 @@ public class girisyap extends javax.swing.JFrame {
     String kullaniciTuru = null; // Kullanıcı türü saklanacak
 
     try {
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040"); // Bağlantıyı aç
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= "); // Bağlantıyı aç
         String sql = "SELECT kayitolmaturu FROM kayitolma WHERE kullaniciadi = ? AND sifre = ? AND okulnumarasi = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, kullaniciAdi);
@@ -312,3 +312,4 @@ public class girisyap extends javax.swing.JFrame {
     private javax.swing.JPasswordField sifretxt;
     // End of variables declaration//GEN-END:variables
 }
+

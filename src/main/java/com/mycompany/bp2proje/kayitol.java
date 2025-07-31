@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
  * @author yusuf
  */
 public class kayitol extends javax.swing.JFrame {
-    private static final String connectionString = "jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040";
+    private static final String connectionString = "jdbc:mysql://localhost:3306/canteen?user=root&password= ";
     
     /**
      * Creates new form kayitol
@@ -259,7 +259,7 @@ public static boolean KullanıcıEkle(String okulnumarasi, String kullaniciadi, 
 
     // Okul numarasının eşsizliğini kontrol et
     try {
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
         String query = "SELECT COUNT(*) FROM kayitolma WHERE okulnumarasi = ?";
         PreparedStatement pstmt = conn.prepareStatement(query);
         pstmt.setString(1, okulnumarasi);
@@ -368,3 +368,4 @@ public static boolean KullanıcıEkle(String okulnumarasi, String kullaniciadi, 
     private javax.swing.JTextField sifretxt;
     // End of variables declaration//GEN-END:variables
 }
+

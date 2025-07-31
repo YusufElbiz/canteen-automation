@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -41,7 +41,7 @@ public class urunlistesi extends javax.swing.JFrame {
         ResultSet rs = null;
 
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
             String query = "SELECT urunadi, urunfiyati, urunadedi, urunkalorisi, id FROM urunlistesi";
             pstmt = conn.prepareStatement(query);
             rs = pstmt.executeQuery();
@@ -353,7 +353,7 @@ public class urunlistesi extends javax.swing.JFrame {
     // Yine de PreparedStatement içinde da string birleştirerek yapacağız:
 
     try {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
         
         // Burada "INSERT" sonrası "ON DUPLICATE KEY UPDATE" ekliyoruz:
         // 'urunadi' UNIQUE ise, aynı isim gelince "duplicate key" devreye girecek ve update işlemini yapacak.
@@ -415,7 +415,7 @@ public class urunlistesi extends javax.swing.JFrame {
             PreparedStatement pstmt = null;
 
             try {
-                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
 
                 // SQL'den ürünü sil
                 String deleteQuery = "DELETE FROM urunlistesi WHERE id = ?";
@@ -512,3 +512,4 @@ public class urunlistesi extends javax.swing.JFrame {
     private javax.swing.JTextField urununkalorisiniekletxt;
     // End of variables declaration//GEN-END:variables
 }
+

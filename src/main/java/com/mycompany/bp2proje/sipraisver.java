@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -55,7 +55,7 @@ public class sipraisver extends javax.swing.JFrame {
 
     try {
         // Veritabanına bağlan
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
 
         // 0 adetli ürünleri silen sorgu
         String deleteQuery = "DELETE FROM urunlistesi WHERE urunadedi = 0";
@@ -84,7 +84,7 @@ public class sipraisver extends javax.swing.JFrame {
         ResultSet rs = null;
 
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password=elbiz-2221221040");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/canteen?user=root&password= ");
             String query = "SELECT urunadi, urunfiyati, urunadedi, urunkalorisi FROM urunlistesi";
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
@@ -476,3 +476,4 @@ this.dispose();
     private javax.swing.JMenuItem uruneklemenuitem;
     // End of variables declaration//GEN-END:variables
 }
+
