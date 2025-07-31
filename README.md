@@ -51,10 +51,6 @@ bp2proje/
 
 > Note: Make sure you have JDK 8 or newer and NetBeans installed.
 
-## 📷 Screenshots
-
-*(You can add screenshots of login page, product list, order screen, etc.)*
-
 ## 👤 Author
 
-**Yusuf Elbiz** – [your GitHub profile]
+**Yusuf Elbiz** 
