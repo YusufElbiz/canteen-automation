@@ -3,7 +3,7 @@
 This is a Java-based desktop automation system for managing a basic canteen operation. The application provides a simple GUI built with Swing in NetBeans IDE.
 
 ## 💡 Features
-
+ 
 - User Registration & Login
 - Product Listing
 - Placing Orders
